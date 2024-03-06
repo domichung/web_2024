@@ -83,7 +83,7 @@
         <script>
             /*Preloading alternate cat image*/
             preload = new Image();
-            preload.src = "imgs/op.png";
+            preload.src = "imgs/p.png";
 
             /*Cat elem*/
             cat = document.getElementById("p")
@@ -125,7 +125,7 @@
 
             op_func = function(){ 
                 /*Chance cat image to op.jpg via css*/
-                cat.id = "op"
+                cat.id = "p"
 
                 /*Play pop noise*/
                 a = new Audio(pops[pop_i])
@@ -143,7 +143,7 @@
                 /*Fire google analytics event for pop*/
                 // gtag('event', 'pop');
             }
-            p_func = () => setTimeout(() => cat.id = "p", 25)
+            p_func = () => setTimeout(() => cat.id = "op", 25)
 
             document.addEventListener("pointerup", p_func)
             document.addEventListener("keyup", p_func)
